@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #96c1f8;
+}
+
+header{
+    height: 100px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+#bateau{
+    position: absolute;
+    top: 400px;
+    animation-name: bateau;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bateau {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 50%;
+    }
+}
+
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #80CEE1;
+    margin: 5px;
+}
+
+#boite3{
+    background-color: gray;
+}
+
+div:hover{
+    transform: rotate(360deg);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+footer{
+    height: 320px;
+    background-color: #5ee1e6;
+    text-align: center;
+}
+
+#basdepage{
+    display: flex;
+    margin:auto;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    background-color: #5ee1e6;
+    transform: none;
+}
+
+#tresor{
+    display: flex;
+    margin:auto;
+    cursor: grab;
+}
